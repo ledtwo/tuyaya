@@ -87,8 +87,8 @@ export async function offliner(showSnack: SnackBarElement['showSnackbar']) {
   await updateReady(reg);
 
   // Ask the user if they want to update.
-  const result = await showSnack('Update available', {
-    actions: ['reload', 'dismiss'],
+  const result = await showSnack('有可用更新', {
+    actions: ['更新', '关闭'],
   });
 
   // Tell the waiting worker to activate, this will change the controller and cause a reload (see

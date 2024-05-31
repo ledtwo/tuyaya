@@ -222,7 +222,7 @@ export class Options extends Component<Props, State> {
             value={options.quality}
             onInput={this.onChange}
           >
-            Quality:
+            图片质量:
           </Range>
         </div>
         <label class={style.optionReveal}>
@@ -230,7 +230,7 @@ export class Options extends Component<Props, State> {
             checked={showAdvanced}
             onChange={linkState(this, 'showAdvanced')}
           />
-          Advanced settings
+          高级设置
         </label>
         <Expander>
           {showAdvanced ? (
@@ -395,7 +395,7 @@ export class Options extends Component<Props, State> {
           ? this._losslessSpecificOptions(options)
           : this._lossySpecificOptions(options)}
         <label class={style.optionToggle}>
-          Preserve transparent data
+          保留透明数据
           <Checkbox
             name="exact"
             checked={!!options.exact}

@@ -244,7 +244,7 @@ export default class Intro extends Component<Props, State> {
             <img
               class={style.logo}
               src={logoWithText}
-              alt="Squoosh"
+              alt="图丫丫-Squoosh"
               width="539"
               height="162"
             />
@@ -285,10 +285,10 @@ export default class Intro extends Component<Props, State> {
                 </svg>
               </button>
               <div>
-                <span class={style.dropText}>Drop </span>OR{' '}
+                <span class={style.dropText}>拖拽、选择 </span>或{' '}
                 {supportsClipboardAPI ? (
                   <button class={style.pasteBtn} onClick={this.onPasteClick}>
-                    Paste
+                    粘贴
                   </button>
                 ) : (
                   'Paste'
@@ -310,7 +310,7 @@ export default class Intro extends Component<Props, State> {
           </svg>
           <div class={style.contentPadding}>
             <p class={style.demoTitle}>
-              Or <strong>try one</strong> of these:
+              或者 <strong>试一试</strong> 这些图片:
             </p>
             <ul class={style.demos}>
               {demos.map((demo, i) => (
@@ -355,10 +355,9 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Small</h2>
+                  <h2 class={style.infoTitle}>极致压缩</h2>
                   <p class={style.infoCaption}>
-                    Smaller images mean faster load times. Squoosh can reduce
-                    file size and maintain high quality.
+                    更小的图片意味着更快的加载时间。Squoosh可以减小文件大小并保持高质量原画。
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
@@ -380,11 +379,10 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Simple</h2>
+                  <h2 class={style.infoTitle}>操作简单</h2>
                   <p class={style.infoCaption}>
-                    Open your image, inspect the differences, then save
-                    instantly. Feeling adventurous? Adjust the settings for even
-                    smaller files.
+                    打开图片，检查差异，然后保存。想要尝试更多？
+                    调整设置以获得更小的文件。
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
@@ -406,10 +404,9 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Secure</h2>
+                  <h2 class={style.infoTitle}>绝对的安全</h2>
                   <p class={style.infoCaption}>
-                    Worried about privacy? Images never leave your device since
-                    Squoosh does all the work locally.
+                    担心隐私问题？由于Squoosh完全在本地完成所有操作，图片永远不会离开你的设备。
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
@@ -440,6 +437,12 @@ export default class Intro extends Component<Props, State> {
                   class={style.footerLink}
                   href="https://github.com/GoogleChromeLabs/squoosh/blob/dev/README.md#privacy"
                 >
+                  By 刘小书 ©️ Copy Right 2024
+                </a>
+                {/* <a
+                  class={style.footerLink}
+                  href="https://github.com/GoogleChromeLabs/squoosh/blob/dev/README.md#privacy"
+                >
                   Privacy
                 </a>
                 <a
@@ -448,14 +451,14 @@ export default class Intro extends Component<Props, State> {
                 >
                   <img src={githubLogo} alt="" width="10" height="10" />
                   Source on Github
-                </a>
+                </a> */}
               </footer>
             </div>
           </div>
         </footer>
         {beforeInstallEvent && (
           <button class={style.installBtn} onClick={this.onInstallClick}>
-            Install
+            安装
           </button>
         )}
       </div>

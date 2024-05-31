@@ -27,7 +27,7 @@ interface Props {}
 const Index: FunctionalComponent<Props> = () => (
   <html lang="en">
     <head>
-      <title>Squoosh</title>
+      <title>图丫丫-Squoosh</title>
       <meta
         name="description"
         content="Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser."
